@@ -1,0 +1,124 @@
+:root {
+  --grey-color: #626262;
+  --accent-color: #03a9f3;
+  --white-color: #fff;
+  --active-color: #ff0000;
+  --line-height: 1.7;
+  --font-family: 'Playfair Display', serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  background-color: #ffffff;
+  color: var(--grey-color);
+  font-family: var(--font-family);
+}
+
+.header {
+  margin-top: 77px;
+  margin-bottom: 73px;
+  min-height: 42px;
+}
+
+/* CONTAITER */
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NAVLINKS*/
+.navlink {
+  font-size: 14px;
+  line-height: var(--line-height);
+  text-decoration: none;
+  color: var(--grey-color);
+  padding-bottom: 18px;
+}
+
+.navlink:hover,
+.navlink:focus {
+  color: var(--accent-color);
+}
+
+.navlink:active {
+  color: var(--active-color);
+}
+
+.lifestyle {
+  padding-right: 61.5px;
+  padding-left: 61.5px;
+}
+.photodiary {
+  padding-right: 51px;
+  padding-left: 61.5px;
+}
+
+.music {
+  padding-right: 47.5px;
+  padding-left: 51px;
+}
+
+.travel {
+  padding-left: 47.5px;
+  padding-right: 47.5px;
+}
+
+/*PARAGRAPH*/
+.paragraph-style,
+.paragraph-photodiary {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 14px;
+  line-height: var(--line-height);
+}
+
+.button {
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.links-section {
+  list-style: none;
+}
+
+.navlinks {
+  /*outline: 2px solid orange;*/
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Flex */
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
