@@ -22,6 +22,12 @@ body {
   font-family: var(--font-family);
 }
 
+p,
+.title {
+  margin: 0px;
+  padding: 0px;
+}
+
 .header {
   margin-top: 77px;
   margin-bottom: 73px;
@@ -30,6 +36,14 @@ body {
 
 /* CONTAITER */
 .container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-left: 150px;
+  padding-right: 150px;*/
+}
+
+.content {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -73,8 +87,7 @@ body {
 }
 
 /*PARAGRAPH*/
-.paragraph-style,
-.paragraph-photodiary {
+.paragraph {
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -92,15 +105,34 @@ body {
   line-height: var(--line-height);
 }
 
+/*BUTTON*/
 .button {
   font-size: 20px;
   line-height: 1.2;
   font-family: inherit;
   cursor: pointer;
+  text-decoration: none;
+  min-width: 164px;
+  min-height: 60px;
+  padding: 22px 34px;
+  outline: 1px solid #000000;
+  color: var(--grey-color);
+  margin-top: 38px;
+  margin-bottom: 70px;
+  margin-left: 359px;
+  margin-right: 0px;
+  text-align: center;
 }
 
-.links-section {
-  list-style: none;
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
 }
 
 .navlinks {
@@ -111,9 +143,10 @@ body {
   list-style: none;
 }
 
-.list {
+.links-section {
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 
 /*Flex */
@@ -121,4 +154,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.links-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-list {
+  flex-basis: calc(100% / 2 - 29.5px);
+  margin-right: 59px;
+  /*разделить на к-во элементов в строке 59/2=29.5px*/
+  /* умножаю на к-во зазоров 59*1=59*/
+}
+
+.section-list:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.paragraph {
+  margin-bottom: 31px;
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 42px;
 }
