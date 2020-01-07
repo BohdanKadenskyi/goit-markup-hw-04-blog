@@ -135,21 +135,14 @@ p,
   color: var(--accent-color);
 }
 
+/*NAVLINKS*/
 .navlinks {
-  /*outline: 2px solid orange;*/
   display: block;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-.links-section {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-/*Flex */
 .navlinks {
   display: flex;
   align-items: center;
@@ -157,14 +150,19 @@ p,
 }
 
 .links-section {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.links-section {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section-list {
   flex-basis: calc(100% / 2 - 29.5px);
   margin-right: 59px;
-  /*разделить на к-во элементов в строке 59/2=29.5px*/
-  /* умножаю на к-во зазоров 59*1=59*/
 }
 
 .section-list:nth-child(2n) {
