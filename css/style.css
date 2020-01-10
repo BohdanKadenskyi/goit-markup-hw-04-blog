@@ -114,15 +114,12 @@ p,
   padding: 22px 34px;
   outline: 1px solid #000000;
   color: var(--grey-color);
-  margin-top: 38px;
-  margin-bottom: 70px;
-  margin-left: 359px;
-  margin-right: 0px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -151,6 +148,7 @@ p,
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 38px;
 }
 
 .links-section {
