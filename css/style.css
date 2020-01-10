@@ -27,7 +27,7 @@ p,
   margin: 0;
   padding: 0;
 }
-.navheader {
+.header {
   padding-top: 77px;
   padding-bottom: 103px;
 }
@@ -41,8 +41,9 @@ p,
   padding-right: 20px;*/
 }
 
-/* NAVLINKS*/
+/* NAVLINK*/
 .navlink {
+  display: inline-block;
   font-size: 14px;
   line-height: var(--line-height);
   text-decoration: none;
