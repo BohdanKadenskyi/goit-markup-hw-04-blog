@@ -43,12 +43,13 @@ p,
 
 /* NAVLINK*/
 .navlink {
-  display: inline-block;
+  display: block;
   font-size: 14px;
   line-height: var(--line-height);
   text-decoration: none;
   color: var(--grey-color);
   padding-bottom: 18px;
+  padding-top: 18px;
 }
 
 .navlink:hover,
